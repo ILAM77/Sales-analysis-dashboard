@@ -51,3 +51,8 @@ The dataset was used to analyze:
 * Returning customers generated higher average sales amounts.
 * Certain sales representatives consistently outperformed others.
 
+## Dashboard Preview
+
+![Dashboard](images/dashboard1.png)
+
+![Power Query](images/powerquery.png)
