@@ -1,39 +1,275 @@
-<!DOCTYPE html>
+# Portfolio GitHub Pages Moderne — Instructions Complètes
 
-<html>
+## Étape 1 — Ouvrir ton repository GitHub
+
+Va dans ton repository :
+
+```text
+Sales-analysis-dashboard
+```
+
+Puis clique sur :
+
+```text
+index.html
+```
+
+Ensuite clique sur :
+
+```text
+✏️ Edit
+```
+
+---
+
+# Étape 2 — Supprimer tout le contenu
+
+Efface tout le contenu actuel.
+
+---
+
+# Étape 3 — Coller ce code moderne
+
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Lamine | Data Analyst Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lamine | Data Analyst</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to bottom right, #0f172a, #1e293b);
+    }
+
+    header h1 {
+      font-size: 70px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 24px;
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 35px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      color: #cbd5e1;
+      font-size: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 25px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 15px;
+      font-size: 25px;
+    }
+
+    .card-content p {
+      color: #cbd5e1;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      background: #3b82f6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+      border-top: 1px solid #1e293b;
+    }
+
+    @media(max-width:768px){
+      header h1 {
+        font-size: 45px;
+      }
+
+      header p {
+        font-size: 18px;
+      }
+    }
+
+  </style>
 </head>
 
-<body style="font-family: Arial; padding:40px;">
+<body>
 
-```
-<h1>Lamine - Data Analyst Portfolio</h1>
+  <header>
 
-<p>
-    Data Analyst passionate about Business Intelligence,
-    data visualization and analytics.
-</p>
+    <h1>Lamine</h1>
 
-<h2>Projects</h2>
+    <p>Data Analyst | Power BI | Excel | SQL | Python</p>
 
-<ul>
-    <li>
-        Sales Analysis Dashboard using Excel, Power Query and Power BI
-    </li>
-</ul>
+    <a class="btn" href="https://github.com/ILAM77">
+      View GitHub
+    </a>
 
-<h2>Skills</h2>
+  </header>
 
-<ul>
-    <li>Power BI</li>
-    <li>Excel</li>
-    <li>Power Query</li>
-    <li>SQL</li>
-    <li>Python</li>
-</ul>
-```
+  <section>
+
+    <h2>About Me</h2>
+
+    <p class="about">
+      Passionate Data Analyst specialized in dashboard creation,
+      data visualization and business intelligence.
+
+      Experienced with Power BI, Excel, Power Query and analytics
+      projects focused on transforming data into actionable insights.
+    </p>
+
+  </section>
+
+  <section>
+
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+      <div class="card">
+
+        <img src="dashboard.png" alt="Dashboard">
+
+        <div class="card-content">
+
+          <h3>Sales Analysis Dashboard</h3>
+
+          <p>
+            Interactive dashboard analyzing sales performance,
+            profits, customer behavior and regional sales trends.
+          </p>
+
+          <br>
+
+          <p>
+            <strong>Tools:</strong>
+            Excel, Power Query, Power BI
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2>Skills</h2>
+
+    <div class="skills">
+
+      <div class="skill">Power BI</div>
+      <div class="skill">Excel</div>
+      <div class="skill">Power Query</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Python</div>
+      <div class="skill">Data Visualization</div>
+      <div class="skill">Business Intelligence</div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 Lamine | Data Analyst Portfolio
+  </footer>
 
 </body>
 </html>
+
+
 
