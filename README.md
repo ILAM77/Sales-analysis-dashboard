@@ -59,13 +59,13 @@ The dataset was used to analyze:
 ![](images/dashboard3.png)
 
 
-   (images/dashboard2.png)
+![](images/dashboard2.png)
 
 
-   (images/dashboard1.png)
-
-
-![Excel](images/Excel.png)
+![](images/dashboard1.png)
 
 
 ![Power Query](images/powerquery.png)
+
+
+![Excel](images/Excel.png)
