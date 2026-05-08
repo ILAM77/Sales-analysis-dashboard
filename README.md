@@ -53,19 +53,19 @@ The dataset was used to analyze:
 
 ## Dashboard Preview
 
-![Dashboard](images/dashboard4.png)
+![Dashboard ](images/dashboard4.png)
 
 
-![Dashboard](images/dashboard3.png)
+   (images/dashboard3.png)
 
 
-![Dashboard](images/dashboard2.png)
+   (images/dashboard2.png)
 
 
-![Dashboard](images/dashboard1.png)
+   (images/dashboard1.png)
 
 
-![Power Query](images/excel.png)
+![Excel](images/Excel.png)
 
 
 ![Power Query](images/powerquery.png)
