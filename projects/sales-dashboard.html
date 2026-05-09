@@ -1,1 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Analysis Dashboard</title>
+  <link rel="stylesheet" href="../style.css">
 
+  <style>
+    body{
+      background:#0d1117;
+      color:#f0f6fc;
+      font-family:'DM Sans',sans-serif;
+      padding:40px;
+    }
+
+    .project-container{
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .back-btn{
+      display:inline-block;
+      margin-bottom:30px;
+      color:#00c896;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    h1{
+      font-size:48px;
+      margin-bottom:10px;
+      font-family:'Syne',sans-serif;
+    }
+
+    .subtitle{
+      color:#8b949e;
+      font-size:18px;
+      margin-bottom:40px;
+    }
+
+    .section{
+      margin-bottom:50px;
+    }
+
+    .section h2{
+      font-size:28px;
+      margin-bottom:20px;
+      color:#00c896;
+    }
+
+    .section p,
+    .section li{
+      color:#c9d1d9;
+      line-height:1.8;
+      font-size:16px;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    .dashboard-img{
+      width:100%;
+      border-radius:16px;
+      border:1px solid #30363d;
+      margin-top:20px;
+    }
+
+    .tags{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:20px;
+    }
+
+    .tag{
+      background:#161b22;
+      border:1px solid #30363d;
+      padding:8px 14px;
+      border-radius:8px;
+      font-size:14px;
+    }
+
+    .github-btn{
+      display:inline-block;
+      margin-top:20px;
+      background:#00c896;
+      color:#0d1117;
+      padding:12px 22px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:700;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="project-container">
+
+  <a href="../index.html" class="back-btn">
+    ← Retour au portfolio
+  </a>
+
+  <h1>Sales Analysis Dashboard</h1>
+
+  <p class="subtitle">
+    Interactive sales dashboard using Excel, Power Query and Power BI
+  </p>
+
+  <!-- Overview -->
+  <div class="section">
+    <h2>Project Overview</h2>
+
+    <p>
+      Ce projet consiste à analyser des données de ventes afin
+      d’identifier les tendances régionales, les produits les
+      plus rentables et les performances commerciales.
+    </p>
+  </div>
+
+  <!-- Dataset -->
+  <div class="section">
+    <h2>Dataset Description</h2>
+
+    <p>
+      Dataset synthétique contenant des transactions de ventes
+      multi-produits et multi-régions.
+    </p>
+
+    <ul>
+      <li>Product ID</li>
+      <li>Sale Date</li>
+      <li>Sales Representative</li>
+      <li>Region</li>
+      <li>Sales Amount</li>
+      <li>Quantity Sold</li>
+      <li>Customer Type</li>
+      <li>Sales Channel</li>
+    </ul>
+  </div>
+
+  <!-- KPIs -->
+  <div class="section">
+    <h2>Key Performance Indicators (KPIs)</h2>
+
+    <ul>
+      <li>Total Revenue</li>
+      <li>Total Profit</li>
+      <li>Profit Margin</li>
+      <li>Quantity Sold</li>
+      <li>Top-Selling Products</li>
+      <li>Best Performing Regions</li>
+    </ul>
+  </div>
+
+  <!-- Insights -->
+  <div class="section">
+    <h2>Key Insights</h2>
+
+    <ul>
+      <li>The West region generated the highest revenue.</li>
+      <li>Online sales channels showed strong growth.</li>
+      <li>Electronics products contributed significantly to sales.</li>
+      <li>Returning customers generated higher average sales.</li>
+    </ul>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="section">
+    <h2>Dashboard Preview</h2>
+
+    <img
+      src="../images/dashboard-sales.png"
+      alt="Sales Dashboard"
+      class="dashboard-img"
+    >
+  </div>
+
+  <!-- Tools -->
+  <div class="section">
+    <h2>Technologies Used</h2>
+
+    <div class="tags">
+      <div class="tag">Power BI</div>
+      <div class="tag">Excel</div>
+      <div class="tag">Power Query</div>
+      <div class="tag">DAX</div>
+    </div>
+  </div>
+
+  <!-- Github -->
+  <a href="https://github.com/lamine-dieng"
+     target="_blank"
+     class="github-btn">
+     View GitHub Repository
+  </a>
+
+</div>
+
+</body>
+</html>
