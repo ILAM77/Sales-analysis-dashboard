@@ -1,32 +1,21 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Sales Dashboard Project</title>
 
   <style>
+
     body{
       background:#0d1117;
-      color:white;
-      font-family:Arial;
-      padding:40px;
-    }
-
-    img{
-      width:100%;
-      border-radius:12px;
-      margin-top:20px;
-      border:1px solid #30363d;
-    }
-  
-
-</head>
-<body>
-      background:#0d1117;
       color:#f0f6fc;
-      font-family:'DM Sans',sans-serif;
+      font-family:Arial, sans-serif;
       padding:40px;
+      margin:0;
     }
 
     .project-container{
@@ -34,67 +23,57 @@
       margin:auto;
     }
 
-    .back-btn{
-      display:inline-block;
-      margin-bottom:30px;
-      color:#00c896;
-      text-decoration:none;
-      font-weight:600;
-    }
-
     h1{
       font-size:48px;
       margin-bottom:10px;
-      font-family:'Syne',sans-serif;
     }
 
     .subtitle{
       color:#8b949e;
       font-size:18px;
-      margin-bottom:40px;
-    }
-
-    .section{
       margin-bottom:50px;
     }
 
-    .section h2{
-      font-size:28px;
-      margin-bottom:20px;
-      color:#00c896;
+    .section{
+      margin-bottom:70px;
     }
 
-    .section p,
-    .section li{
-      color:#c9d1d9;
+    h2{
+      color:#00c896;
+      margin-bottom:20px;
+      margin-top:40px;
+    }
+
+    p{
       line-height:1.8;
-      font-size:16px;
+      color:#c9d1d9;
     }
 
     ul{
       padding-left:20px;
+      line-height:1.8;
+      color:#c9d1d9;
     }
 
-    .dashboard-img{
+    img{
       width:100%;
-      border-radius:16px;
+      border-radius:14px;
+      margin-top:25px;
       border:1px solid #30363d;
-      margin-top:20px;
     }
 
     .tags{
       display:flex;
-      gap:10px;
       flex-wrap:wrap;
+      gap:12px;
       margin-top:20px;
     }
 
     .tag{
       background:#161b22;
       border:1px solid #30363d;
-      padding:8px 14px;
-      border-radius:8px;
-      font-size:14px;
+      padding:10px 16px;
+      border-radius:10px;
     }
 
     .github-btn{
@@ -102,129 +81,200 @@
       margin-top:20px;
       background:#00c896;
       color:#0d1117;
-      padding:12px 22px;
+      padding:14px 24px;
       border-radius:10px;
       text-decoration:none;
-      font-weight:700;
+      font-weight:bold;
     }
+
+    .github-btn:hover{
+      opacity:0.9;
+    }
+
   </style>
+
 </head>
 
 <body>
 
 <div class="project-container">
 
-  <a href="../index.html" class="back-btn">
-    ← Retour au portfolio
-  </a>
+<h1>Sales Dashboard Analysis</h1>
 
-  <h1>Sales Analysis Dashboard</h1>
+<p class="subtitle">
+Interactive Power BI dashboard analyzing sales performance, customer behavior, regional trends, and profit distribution.
+</p>
 
-  <p class="subtitle">
-    Interactive sales dashboard using Excel, Power Query and Power BI
-  </p>
 
-  <!-- Overview -->
-  <div class="section">
-    <h2>Project Overview</h2>
+<!-- ================= DATASET ================= -->
 
-    <p>
-      Ce projet consiste à analyser des données de ventes afin
-      d’identifier les tendances régionales, les produits les
-      plus rentables et les performances commerciales.
-    </p>
-  </div>
+<section class="section">
 
-  <!-- Dataset -->
-  <div class="section">
-    <h2>Dataset Description</h2>
+<h2>Dataset</h2>
 
-    <p>
-      Dataset synthétique contenant des transactions de ventes
-      multi-produits et multi-régions.
-    </p>
+<p>
+The dataset contains transactional sales data including products, regions, sales representatives, customer types, discounts, payment methods, and sales channels.
+</p>
 
-    <ul>
-      <li>Product ID</li>
-      <li>Sale Date</li>
-      <li>Sales Representative</li>
-      <li>Region</li>
-      <li>Sales Amount</li>
-      <li>Quantity Sold</li>
-      <li>Customer Type</li>
-      <li>Sales Channel</li>
-    </ul>
-  </div>
+<p>
+The objective of this project was to analyze business performance and identify the main factors influencing sales and profitability.
+</p>
 
-  <!-- KPIs -->
-  <div class="section">
-    <h2>Key Performance Indicators (KPIs)</h2>
+<img src="../images/Excel.png" alt="Sales Dataset">
 
-    <ul>
-      <li>Total Revenue</li>
-      <li>Total Profit</li>
-      <li>Profit Margin</li>
-      <li>Quantity Sold</li>
-      <li>Top-Selling Products</li>
-      <li>Best Performing Regions</li>
-    </ul>
-  </div>
+</section>
 
-  <!-- Insights -->
-  <div class="section">
-    <h2>Key Insights</h2>
 
-    <ul>
-      <li>The West region generated the highest revenue.</li>
-      <li>Online sales channels showed strong growth.</li>
-      <li>Electronics products contributed significantly to sales.</li>
-      <li>Returning customers generated higher average sales.</li>
-    </ul>
-  </div>
 
-  <!-- Dashboard -->
-  <div class="section">
-    <h2>Dashboard Preview</h2>
+<!-- ================= POWER QUERY ================= -->
 
-<img src="../images/dashboard4.png" alt="Dashboard Preview" width="90%">
-<img src="../images/dashboard3.png" alt="Dashboard Preview" width="90%">
-<img src="../images/dashboard2.png" alt="Dashboard Preview" width="90%">
-<img src="../images/dashboard1.png" alt="Dashboard Preview" width="90%">
+<section class="section">
 
-<h2>Power Query</h2>
+<h2>Data Cleaning & Transformation</h2>
 
-<img src="../images/powerquery.png" alt="Power Query" width="90%">
+<p>
+Data preprocessing and transformation were performed using Power Query in Power BI.
+</p>
 
-<h2>Excel</h2>
+<ul>
+  <li>Renamed and formatted columns</li>
+  <li>Handled data types</li>
+  <li>Created calculated fields</li>
+  <li>Prepared data for dashboard visualization</li>
+</ul>
 
-<img src="../images/Excel.png" alt="Dashboard Preview" width="90%">
+<p>
+This step ensured data consistency and improved the quality of the analysis.
+</p>
 
-    
+<img src="../images/powerquery.png" alt="Power Query Cleaning">
 
-<a href="../files/Données de vente.pbix" download>
-    
+</section>
+
+
+
+<!-- ================= DASHBOARD OVERVIEW ================= -->
+
+<section class="section">
+
+<h2>Dashboard Overview</h2>
+
+<p>
+This dashboard provides a global overview of sales performance, profits, margins, and quantity sold.
+</p>
+
+<p>
+Interactive filters allow users to analyze data by:
+</p>
+
+<ul>
+  <li>Customer Type</li>
+  <li>Product Category</li>
+  <li>Region</li>
+</ul>
+
+<p>
+The dashboard highlights monthly sales evolution and overall business performance.
+</p>
+
+<img src="../images/dashboard4.png" alt="Global Dashboard">
+
+</section>
+
+
+
+<!-- ================= CATEGORY & REGION ANALYSIS ================= -->
+
+<section class="section">
+
+<h2>Category & Region Analysis</h2>
+
+<p>
+This section analyzes sales and profits across different product categories and regions.
+</p>
+
+<ul>
+  <li>Furniture and Clothing generated strong profits</li>
+  <li>East and West regions recorded the highest sales performance</li>
+  <li>Regional comparisons helped identify profitable markets</li>
+</ul>
+
+<p>
+These insights can support strategic business decisions and market optimization.
+</p>
+
+<img src="../images/dashboard3.png" alt="Category and Region Analysis">
+
+</section>
+
+
+
+<!-- ================= CUSTOMER & PAYMENT ANALYSIS ================= -->
+
+<section class="section">
+
+<h2>Customer & Payment Analysis</h2>
+
+<p>
+This dashboard focuses on customer purchasing behavior, payment methods, and sales representatives' performance.
+</p>
+
+<ul>
+  <li>Returning customers contributed significantly to revenue</li>
+  <li>Online and Retail channels showed balanced sales distribution</li>
+  <li>David and Bob were the top-performing sales representatives</li>
+</ul>
+
+<p>
+The analysis also provides insights into customer preferences and payment trends.
+</p>
+
+<img src="../images/dashboard1.png" alt="Customer Analysis">
+
+</section>
+
+
+
+<!-- ================= TOOLS ================= -->
+
+<section class="section">
+
+<h2>Tools & Technologies</h2>
+
+<div class="tags">
+  <span class="tag">Power BI</span>
+  <span class="tag">Power Query</span>
+  <span class="tag">DAX</span>
+  <span class="tag">Excel</span>
+  <span class="tag">Data Visualization</span>
+  <span class="tag">Data Analysis</span>
+</div>
+
+</section>
+
+
+
+<!-- ================= DOWNLOAD ================= -->
+
+<section class="section">
+
+<h2>Project Files</h2>
+
+<p>
+You can download the Power BI dashboard file below.
+</p>
+
+<a href="../files/Données de vente.pbix"
+   download
+   target="_blank"
+   class="github-btn">
+   Download Power BI File
 </a>
 
-  <!-- Tools -->
-  <div class="section">
-    <h2>Technologies Used</h2>
-
-    <div class="tags">
-      <div class="tag">Power BI</div>
-      <div class="tag">Excel</div>
-      <div class="tag">Power Query</div>
-      <div class="tag">DAX</div>
-    </div>
-  </div>
-
-  <!-- Github -->
-  <a href="https://github.com/ILAM77/Sales-analysis-dashboard"
-     target="_blank"
-     class="github-btn">
-     View GitHub Repository
-  </a>
+</section>
 
 </div>
 
 </body>
 </html>
+```
